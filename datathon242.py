@@ -19,9 +19,9 @@ import csv
     
 labels = []
 
-year1rates = []
+year1rates = [] # 2020 admissions rates 
 
-year2rates = []
+year2rates = [] # 2019 admissions rates 
 
 
 # read in and parse csv file 
@@ -47,9 +47,9 @@ width = 0.35
 
 fig, ax = plt.subplots(num = None, figsize = (20,15), dpi = 80, facecolor = 'w', edgecolor = 'k')
 
-rects1 = ax.bar(x-width/2, year1rates, width, label = '2019 admissions rates (%)')
+rects1 = ax.bar(x-width/2, year1rates, width, label = '2020 admissions rates (%)')
 
-rects2 = ax.bar(x+width/2, year2rates, width, label = '2020 admissions rates (%)')
+rects2 = ax.bar(x+width/2, year2rates, width, label = '2019 admissions rates (%)')
 
 ax.set_ylabel('Admission Rates')
 ax.set_title('Comparing 2019 and 2020 Admission Rates at 17 Institution Across the US')
